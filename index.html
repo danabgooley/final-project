@@ -9,15 +9,16 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
 	</head>
 	<body>
-		<header>
-			<div class="container">
+			<header>
+			<div id="logo">
 				<h1 class="logo"><a href ="index.html">ASADOS DOÑA FLOR</a></h1>
-				<h2>Authentic Colombian Food in Lowell, Massachusetts</h2>
+				<h2 class="logo">Authentic Colombian Food in Lowell, Massachusetts</h2>
 				</div>
-				<div id="navbar">
+				<div class="nav">
 				<nav>
 					<ul>
 						<li><a href="menu.html">MENU</a></li>
@@ -29,12 +30,78 @@
 				</nav>
 			</div>
 		</header>
-		<section id="main">
-			<div class="container">
-			<img id="home" src="images/asados.jpg" alt="The front of Asados Dona Flor">
-			<p id="homepage"> Located in downtown Lowell, Massachusetts, Asados Doña Flor has been serving the tastes of 'La Tierrita' since 2010. Family owned and operated, Asados Doña Flor offers dine-in, take out and catering services. Open for breakfast, lunch and dinner six days a week. </p>
+
+		<div id="fullpage">
+	<div class="section" id="home">
+	
+	<div id="home-text"><p id="homepage"> Located in downtown Lowell, Massachusetts, Asados Doña Flor has been serving the tastes of 'La Tierrita' since 2010. Family owned and operated, Asados Doña Flor offers dine-in, take out and catering services. Open for breakfast, lunch and dinner six days a week. </p></div></div>
+	<div class="section">	<img src="images/family.jpg" alt="The Rodriguez Family">
+			<p> Aura, Yucsi, Daniella and Andres Rodriguez have been the owners of Asados Doña Flor since 2010. Hailing from San Francisco, Colombia, the Rodriguez family's love for their home country shows in their dedication to serving authentic food with frsh ingredients arriving from Colombia every week. Before buying the restaurant, Aura and Yucsi gathered recipies from family and frieds across Colombia to bring the best of their country to you. From traditional Sancocho to pasteles de pollo con salsa rosada, the menu is a mix of new favorites and old standards.</p></div>
+	<div class="section"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.88333416629!2d-71.30344278451315!3d42.642633179168996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a43ce12301ad%3A0xdd283c28e8ef0ce7!2sAsados+Dona+Flor!5e0!3m2!1sen!2sus!4v1494467935063" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<p> Asados Doña Flor is open 6 days a week, Tuesday through Sunday, from 9 a.m. to 9 p.m. </p></div>
+	<div class="section"><form>
+					  <p>Name:</p>
+					 	 <input class="catering" type="text" name="name">
+					  <p>Last name:</p>
+					 	 <input class="catering" type="text" name="name">
+					  <p>Date of event:</P>
+					 	 <input class="catering" type="date" name="number">
+					  <p>Item 1</p>
+					 	 <input class="catering" type="text" name="item1">
+					  <p>Amount of servings</p>
+					 	 <input class="catering" type="number" name="servings">
+					    <p>Item 2</p>
+					  	<input class="catering" type="text" name="item1">
+					  <p>Amount of servings</p>
+					  	<input class="catering" type="number" name="servings">
+					 <!--  // add jquery to show another item row -->
+				</form>
 			</div>
-		</section>
+		
+	<div class="section"><h3>ENTRADAS/SMALL PLATES</h3>
+
+				<h4>TOSTONES O MADUROS CON QUESO</h4>
+					<p>Fried green plantains or sweet plantains with cheese</p><p class="cost">$4.50</p>
+
+				<h4>YUCA FRITA</h4>
+					<p>Fried yuca</p><p class="cost">$3.50</p>
+
+				<h4>MINI-MINI PICADA</h4>
+					<p>A small assortment of meats, potatoes, cheese and more</p><p class="cost">$9.95</p>
+
+				<h4>SALCHIPAPAS</h4>
+					<p>Papas fritas, huevos codorniz, albondiga y salchichas/French fries, quail eggs, meatballs and sliced sausages</p> <p class="cost">$5.95</p>
+
+				<h4>PATACON CON GUACAMOLE Y POLLO DESMECHADO</h4>
+					<p>Fried green plantain topped with guacamole and shredded chicken</p><p class="cost"> $6.50</p>
+
+				<h4>PATACON CON GUACAMOLE Y CARNE DESMECHADA</h4>
+					<p>Fried green plantain topped with guacamole and shredded beef</p><p class="cost">$7.50</p>
+
+				<h4>PATACON CON CAMARONES EN HOGADO</h4>
+					<p>Fried green plantain topped with shrimp in a traditional Colombian sauce</p><p class="cost"> $9.00</p>
+
+				<h4>TRIO DE PATACONES</h4>
+					<p>A sampler of all three patacon dishes: Chicken, beef and shrimp</p><p class="cost"> $8.00</p>
+
+				<h4>EMPANADAS</h4>
+					<p>Fried pockets of beef, potato and spices wrapped in a cornmeal dough (masa)</p><p class="cost"> $1.50 each</p>
+
+				<h4>PASTELES DE POLLO</h4>
+					<p>Fried pockets of chicken, potato and spices wrapped in a cornmeal dough (masa)</p><p class="cost"> $2.00 each</p>
+
+				<h4>AREPA BLANCA CON QUESO Y MANTEQUILLA</h4>
+					<p>A white cornmeal pancake topped with fresh Colombian cheese and butter</p><p class="cost"> $2.95</p>
+
+				<h4>CHORIZO O CHICHARRON CON AREPA Y LIMON</h4>
+					<p>Colombian sausage or fried pork belly with a cornmeal pancake and a slice of lime</p><p class="cost"> $3.50</p>
+
+				<h4>AREPA DE CHOCOLO CON QUESO Y MANTEQUILLA</h4>
+					<p>A sweet corn pancake with Colombian cheese and butter</p><p class="cost"> $3.50</p>
+
+				<h4>AREPA ASADA CON CARNE DE RES O POLLO DESMECHADO Y GUACAMOLE</h4>
+					<p>A grilled corn pancake with beef or shredded chicken and guacamole</p><p class="cost"> $6.50</p>
+					</div>
 
 
 			<footer>
@@ -47,10 +114,12 @@
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</nav>
-				&copy; Dana Gooley 2017
+				<!-- &copy; Dana Gooley 2017 -->
 			</footer>
 		</div><!-- #container -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 	<script src="js/main.js"></script>
+	<script src="js/jquery.fullPage.min copy.js"></script>
 	</body>
 </html>

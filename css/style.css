@@ -90,7 +90,7 @@ a {
 }
 
 /******************************************
-/* LAYOUT
+/* MAIN LAYOUT
 /*******************************************/
 
 /* Center the container */
@@ -102,11 +102,13 @@ a {
 header {
   text-align: left;
   padding: 30px;
+  clear: both;
+
 }
 
-header h1 {
+/*header h1 {
   float: left;
-}
+}*/
 
 header h2 {
   padding-top: 10px;
@@ -120,26 +122,39 @@ header nav {
   margin-top: 15px;
   letter-spacing: 1.5px;
   padding-bottom: 20px;
+
+}
+
+ul {
+  float: right;
 }
 
 header nav ul li {
-  display: inline-block;
-  margin: 0 0 0 40px;
-  font-size: 16px;
+  /*display: inline-block;*/
+  /*margin: 0 0 0 40px;
+  padding-right: 20px;*/
+  width: 100%;
+  font-size: 14px;
+ /* border: 0.5px solid #B2020F;
+  border-radius: 5%;*/
+  /*padding: 2%;*/
+  clear: both;
+  float: right;
 }
 
 header nav ul li a {
   color: #B2020F;
+  /*padding: 1%;*/
 }
 
-img {
+/*img {
   margin-left: 20%;
   margin-right: 20%;
-}
+}*/
 
 footer nav {
  text-align: center;
-  margin-top: 15px;
+  margin-top: 3%;
   letter-spacing: 1.5px;
 }
 
@@ -157,14 +172,111 @@ iframe {
 padding: 20px;
 }
 
+form {
+  display: inline-block;
+  /*float: left;*/
+  clear: both;
+  margin: 10% 30%;
+}
+
+.logo {
+  float: left;
+}
 
 .navbar {
   float: right;
-  clear: 
+  clear: both;
+  display: inline-block; 
 }
 
-.homepage {
 
+#home {
+  background: url(../images/asados.jpg) no-repeat center center;
+  background-size: cover;
+ 
+}
+
+#hometext {
+  justify-content: right;
+}
+
+
+#logo {
+  float: left;
+}
+
+#footer {
+  clear: both;
+}
+
+.container {
+  clear:both;
+}
+
+
+.section {
+width: 80%;
+  
+}
+/******************************************
+/* LAYOUT: ABOUT
+/*******************************************/
+
+
+
+
+/******************************************
+/* LAYOUT: CATERING
+/*******************************************/
+.catering {
+  float: right;
+}
+
+
+form {
+  display: inline-block;
+  /*float: left;*/
+  clear: both;
+  margin: 10% 30%;
+
+}
+
+/******************************************
+/* LAYOUT: CONTACT
+/*******************************************/
+
+.contact {
+
+}
+
+#message {
+  width: 30%;
+  height: 50%;
+
+}
+
+#contact {
+  display: inline-block;
+  clear: both;
+
+}
+
+/******************************************
+/* LAYOUT: HOURS-LOCATION
+/*******************************************/
+
+iframe {
+padding: 20px;
+}
+
+
+
+/******************************************
+/* LAYOUT: MENU
+/*******************************************/
+
+.menu {
+  float: left;
 }
 
 .cost {
@@ -173,6 +285,5 @@ padding: 20px;
   float: right;
 }
 
-.menu {
-  float: left;
-}
+
+
