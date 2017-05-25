@@ -89,6 +89,11 @@ a {
   color: #B2020F;
 }
 
+img {
+  width: 960px;
+  height: auto;
+}
+
 /******************************************
 /* MAIN LAYOUT
 /*******************************************/
@@ -215,16 +220,34 @@ hr {
 }
 
 
+/******************************************
+/* LAYOUT: SPLASH PAGE
+/*******************************************/
 
+#splashpage {
+
+}
+
+.enter_spanish {
+  font-size: 30px;
+  border-radius: 5%;
+  border: 2px solid #B2020F;
+}
+
+.enter_english {
+  font-size: 30px;
+  border-radius: 5%;
+  border: 2px solid #B2020F;
+}
 
 /******************************************
 /* LAYOUT: ABOUT
 /*******************************************/
 
 #about {
-  background: url(../images/family.jpg) no-repeat center center;
+/*  background: url(../images/family.jpg) no-repeat center center;
   background-size: cover;
-  clear: both;
+  clear: both;*/
   
 }
 
@@ -238,9 +261,9 @@ hr {
 
 #catering {
 
-  background: url(../images/homepage.jpg) no-repeat center center;
+ /* background: url(../images/homepage.jpg) no-repeat center center;
   background-size: cover;
-  clear: both;
+  clear: both;*/
 
 }
 
@@ -256,10 +279,6 @@ form {
 /******************************************
 /* LAYOUT: CONTACT
 /*******************************************/
-
-.contact {
-
-}
 
 #message {
   width: 30%;
@@ -283,9 +302,9 @@ float: right;
 }
 
 #hours-location {
-  background: url(../images/hours-location.jpg) no-repeat center center;
+/*  background: url(../images/hours-location.jpg) no-repeat center center;
   background-size: cover;
-  clear: both;
+  clear: both;*/
 
 }
 
@@ -325,34 +344,6 @@ line-height: 2em;
   margin: 15px 0;
 }
 
-.small-plates{
-  /*height: 55%;*/
- /* background: url(../images/menu-1.jpg) no-repeat center center;
-  background-size: cover;
-  clear: both;*/
-}
-
-.breakfast {
-/*  background: url(../images/menu-2.jpg) no-repeat center center;
-  background-size: cover;
-  clear: both;*/
-}
-
-.tipicos {
-
-}
-
-.carne {
-
-}
-
-.pescado{
-
-}
-
-.pollo {
-
-}
 
 .hide {
   display: none;
