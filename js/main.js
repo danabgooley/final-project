@@ -1,4 +1,14 @@
+$(document).ready(function(){
+
 // Index/All Pages // 
+
+$('.enter_spanish').click(function() { 
+        $(this).parent().fadeOut(500);
+ });
+
+$('.enter_english').click(function() { 
+        $(this).parent().fadeOut(500);
+ });
 
 // Make nav bar menu dropdown - CSS
 // Change text color on hover - CSS
@@ -6,10 +16,100 @@
 
 // Menu //
 
-// scrolling to end of page loads next menu section (taken from stack overflow)
-var end = $("#BottomThing").offset().top; 
-var viewEnd = $(window).scrollTop() + $(window).height(); 
-var distance = end - viewEnd; if (distance < 300) // do load
+// hide/show menu sections
+
+
+// small plates
+
+	$(".smallplates").click(expand);
+
+	function expand(){
+	event.preventDefault()
+		$("#show-smallplates").slideDown();
+	
+	}
+	
+	$(".smallplates").click(collapse);
+
+	function collapse(){
+	event.preventDefault()
+		$("#show-smallplates").slideUp();
+		
+	}
+
+	// breakfast
+
+	$(".breakfast").click(expand);
+
+	function expand(){
+	event.preventDefault()
+		$("#show-breakfast").slideDown();
+		
+	}
+	
+	$(".breakfast").click(collapse);
+
+	function collapse(){
+	event.preventDefault()
+		$("#show-breakfast").slideUp();
+	
+		
+	}
+
+	// tipicos
+
+	$(".tipicos").click(expand);
+
+	function expand(){
+	event.preventDefault()
+		$("#show-tipicos").slideDown();
+		
+	}
+	
+	$(".tipicos").click(collapse);
+
+	function collapse(){
+	event.preventDefault()
+		$("#show-tipicos").slideUp();
+
+	}
+	
+
+	// carne
+
+	$(".carne").click(expand);
+
+	function expand(){
+	event.preventDefault()
+		$("#show-carne").slideDown();
+		
+	}
+	
+	$(".carne").click(collapse);
+
+	function collapse(){
+	event.preventDefault()
+		$("#show-carne").slideUp();
+
+	}
+
+	// drinks
+
+	$(".drinks").click(expand);
+
+	function expand(){
+	event.preventDefault()
+		$("#show-drinks").slideDown();
+		
+	}
+	
+	$(".drinks").click(collapse);
+
+	function collapse(){
+	event.preventDefault()
+		$("#show-drinks").slideUp();
+
+	}
 
 
 // Catering //
@@ -18,16 +118,4 @@ var distance = end - viewEnd; if (distance < 300) // do load
 
 // Contact page sends email report
 
-
-//Fullpage.JS - library from internet, makes everything into a scrolling page?
-
-$(document).ready(function() {
-	$('#fullpage').fullpage();
 });
-
-$('#fullpage').fullpage({
-	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-
-	afterLoad: function(anchorLink, index){
-		var loadedSection = $(this);
-

@@ -50,7 +50,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   background: white;
-  margin: 20px;
+  
 }
 
 p {
@@ -179,6 +179,10 @@ form {
   margin: 10% 30%;
 }
 
+hr {
+  clear: both;
+}
+
 .logo {
   float: left;
 }
@@ -191,8 +195,9 @@ form {
 
 
 #home {
-  background: url(../images/asados.jpg) no-repeat center center;
+/*  background: url(../images/asados.jpg) no-repeat center center;
   background-size: cover;
+  clear: both;*/
  
 }
 
@@ -209,20 +214,19 @@ form {
   clear: both;
 }
 
-.container {
-  clear:both;
-}
 
 
-.section {
-width: 80%;
-  
-}
+
 /******************************************
 /* LAYOUT: ABOUT
 /*******************************************/
 
-
+#about {
+  background: url(../images/family.jpg) no-repeat center center;
+  background-size: cover;
+  clear: both;
+  
+}
 
 
 /******************************************
@@ -230,6 +234,14 @@ width: 80%;
 /*******************************************/
 .catering {
   float: right;
+}
+
+#catering {
+
+  background: url(../images/homepage.jpg) no-repeat center center;
+  background-size: cover;
+  clear: both;
+
 }
 
 
@@ -267,23 +279,86 @@ form {
 
 iframe {
 padding: 20px;
+float: right;
 }
+
+#hours-location {
+  background: url(../images/hours-location.jpg) no-repeat center center;
+  background-size: cover;
+  clear: both;
+
+}
+
 
 
 
 /******************************************
 /* LAYOUT: MENU
 /*******************************************/
+.menu-font {
+  clear: both;
+  line-height: 2em;
+}
 
-.menu {
+.menu-font + p{
   float: left;
+  letter-spacing: .2em;
+  line-height: 2em;/*
+  margin-bottom: 15px;*/
+ width: 70%;
+clear: both;
 }
 
 .cost {
   font-size: 15px;
   font-weight: 600;
   float: right;
+line-height: 2em;
+/*  width: 30%;*/
+  /*clear: both;*/
 }
 
+.menu-title {
+/*  margin: 2% 0;*/
+  float: left;
+  clear: both;
+  margin: 15px 0;
+}
 
+.small-plates{
+  /*height: 55%;*/
+ /* background: url(../images/menu-1.jpg) no-repeat center center;
+  background-size: cover;
+  clear: both;*/
+}
 
+.breakfast {
+/*  background: url(../images/menu-2.jpg) no-repeat center center;
+  background-size: cover;
+  clear: both;*/
+}
+
+.tipicos {
+
+}
+
+.carne {
+
+}
+
+.pescado{
+
+}
+
+.pollo {
+
+}
+
+.hide {
+  display: none;
+}
+
+#menu {
+padding: 20px;
+
+}

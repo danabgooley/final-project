@@ -1,5 +1,16 @@
-I want to make this one long scrolling site with anchor points on each section that link to the nav bar. How do I properly space the sections using percentages?
+GENERAL
 
-I downloaded a nuts jquery library and I have no idea how to use it.
+I have a really cool fadeout thing for my splash page, and it works! I just need to get my dimensions right :/
 
-I am taking photos this weekend so I should have some real photos to build out the site.
+-----------------------------------------------
+
+MENU SECTION
+
+For the menu, I am using the hide/show function to make expandable sections instead of displaying it all at once
+	
+	+ Small Plates
+	+ Breakfast
+	+ etc. 
+
+When you click on them, they expand to show that section of the menu
+BUT mine only shows the most recent menu section when clicked on, and I can't get it to stay open. 
