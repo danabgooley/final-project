@@ -2,16 +2,27 @@ $(document).ready(function(){
 
 // Index/All Pages // 
 
-$('.enter_spanish').click(function() { 
-        $(this).parent().fadeOut(500);
- });
 
-$('.enter_english').click(function() { 
-        $(this).parent().fadeOut(500);
- });
+$(".enter_spanish").click(fadeEnglish);
+        
+	function fadeEnglish(){
+		event.preventDefault();
+		$("#english").fadeOut(500);
+		$("#splashpage").fadeOut(500);
+		$("#spanish").fadeIn(500);
+		} 
 
-// Make nav bar menu dropdown - CSS
-// Change text color on hover - CSS
+
+
+$(".enter_english").click(fadeSpanish);
+        
+	function fadeSpanish(){
+		event.preventDefault();
+		$("#spanish").fadeOut(500);
+		$("#splashpage").fadeOut(500);
+		$("#english").fadeIn(500); 
+		}
+
 
 
 // Menu //
@@ -21,96 +32,77 @@ $('.enter_english').click(function() {
 
 // small plates
 
-	$(".smallplates").click(expand);
+	$(".smallplates").click(function(){
+		if ( $(this).hasClass("expanded") ) {
+			$(".smallplates").removeClass("expanded");
+			$("#show-smallplates").slideUp();
+		}
+		else {
+			$(".smallplates").addClass("expanded");
+			$("#show-smallplates").slideDown();
+		}
 
-	function expand(){
-	event.preventDefault()
-		$("#show-smallplates").slideDown();
-	
-	}
-	
-	$(".smallplates").click(collapse);
+	});
 
-	function collapse(){
-	event.preventDefault()
-		$("#show-smallplates").slideUp();
-		
-	}
 
 	// breakfast
 
-	$(".breakfast").click(expand);
+		$(".breakfast").click(function(){
+		if ( $(this).hasClass("expanded") ) {
+			$(".breakfast").removeClass("expanded");
+			$("#show-breakfast").slideUp();
+		}
+		else {
+			$(".breakfast").addClass("expanded");
+			$("#show-breakfast").slideDown();
+		}
 
-	function expand(){
-	event.preventDefault()
-		$("#show-breakfast").slideDown();
+	});
 		
-	}
 	
-	$(".breakfast").click(collapse);
-
-	function collapse(){
-	event.preventDefault()
-		$("#show-breakfast").slideUp();
-	
-		
-	}
 
 	// tipicos
 
-	$(".tipicos").click(expand);
+		$(".tipicos").click(function(){
+		if ( $(this).hasClass("expanded") ) {
+			$(".tipicos").removeClass("expanded");
+			$("#show-tipicos").slideUp();
+		}
+		else {
+			$(".tipicos").addClass("expanded");
+			$("#show-tipicos").slideDown();
+		}
 
-	function expand(){
-	event.preventDefault()
-		$("#show-tipicos").slideDown();
-		
-	}
-	
-	$(".tipicos").click(collapse);
-
-	function collapse(){
-	event.preventDefault()
-		$("#show-tipicos").slideUp();
-
-	}
+	});
 	
 
 	// carne
 
-	$(".carne").click(expand);
+		$(".carne").click(function(){
+		if ( $(this).hasClass("expanded") ) {
+			$(".carne").removeClass("expanded");
+			$("#show-carne").slideUp();
+		}
+		else {
+			$(".carne").addClass("expanded");
+			$("#show-carne").slideDown();
+		}
 
-	function expand(){
-	event.preventDefault()
-		$("#show-carne").slideDown();
-		
-	}
-	
-	$(".carne").click(collapse);
-
-	function collapse(){
-	event.preventDefault()
-		$("#show-carne").slideUp();
-
-	}
+	});
 
 	// drinks
 
-	$(".drinks").click(expand);
+		$(".drinks").click(function(){
+		if ( $(this).hasClass("expanded") ) {
+			$(".drinks").removeClass("expanded");
+			$("#show-drinks").slideUp();
+		}
+		else {
+			$(".drinks").addClass("expanded");
+			$("#show-drinks").slideDown();
+		}
 
-	function expand(){
-	event.preventDefault()
-		$("#show-drinks").slideDown();
-		
-	}
-	
-	$(".drinks").click(collapse);
-
-	function collapse(){
-	event.preventDefault()
-		$("#show-drinks").slideUp();
-
-	}
-
+	});
 
 // Catering //
 
