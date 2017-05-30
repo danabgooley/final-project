@@ -46,7 +46,7 @@ Developer FEWD 28
 /*******************************************/
 
 body {
-  font-family: 'Amatic SC';
+  font-family: 'Nobile';
   font-size: 30px;
   font-weight: 400;
   
@@ -60,14 +60,14 @@ p {
 }
 
 h1 {
-  font-family: 'Barrio';
+  font-family: 'Amatic sc';
   font-size: 70px;
   font-weight: 600;
   letter-spacing: 2.5px;
 }
 
 h2 {
-  font-family: 'Barrio';
+  font-family: 'Amatic sc';
   font-size: 50px;
   font-weight: 400;
 }
@@ -136,6 +136,10 @@ ul {
   float: right;
 }
 
+footer ul {
+  float: none;
+}
+
 header nav ul li {
   /*display: inline-block;*/
   /*margin: 0 0 0 40px;
@@ -173,6 +177,8 @@ footer nav ul li {
 
 header nav ul li a {
   color: #B2020F;
+ 
+  background: white;
 }
 
 iframe {
@@ -204,9 +210,7 @@ hr {
 
 
 #home {
-/*  background: url(../images/asados.jpg) no-repeat center center;
-  background-size: cover;
-  clear: both;*/
+text-align: center;
  
 }
 
@@ -215,7 +219,8 @@ hr {
  /* opacity: 0.5;*/
   height: auto;
   width: 50%;
- 
+  margin: 20px auto 0;
+/* add line-height*/ 
 /*  float: right;
   clear: both;*/
 
@@ -240,36 +245,52 @@ hr {
 #splash {
 
 clear: both;
-font-size: 30px;
+font-size: 80px;
+font-family: 'Barrio'
 color: black;
 }
 
-.enter_spanish {
-  font-size: 30px;
-  border-radius: 5%;
-  border: 2px solid #B2020F;
+#splashpage {
+
+  background: url(../images/homepage.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 450px 150px;
+}
+#splashpage > div {
+  background: rgba(225,225,225,0.5);
+  margin-top: 40px;
+  padding: 25px;
   text-align: center;
+  float: left;
+}
+#splashpage > div+div {
+  background: rgba(225,225,225,0);
+  padding: 25px 0;
+   margin-top: 40px;
+  clear: both;
 }
 
+.enter_spanish, 
 .enter_english {
-  font-size: 30px;
+  font-size: 50px;
   border-radius: 5%;
   border: 2px solid #B2020F;
   text-align: center;
+  background: rgba(225,225,225,0.5);
+  padding: 5px;
 }
+
 
 #english{
 
 display: none;
-background: url(../images/asados.jpg) center center no-repeat;
-background-size: cover;
+
 
 }
 
 #spanish {
   display: none;
-  background: url(../images/asados.jpg) center center no-repeat;
-  background-size: cover;
+ 
 }
 
 /******************************************
@@ -277,10 +298,15 @@ background-size: cover;
 /*******************************************/
 
 #about {
-/*  background: url(../images/family.jpg) no-repeat center center;
-  background-size: cover;
-  clear: both;*/
+text-align: center;
   
+}
+
+#about-text{
+  height: auto;
+  width: 80%;
+  margin: 20px auto 0;
+  font-size: 25px;
 }
 
 #about-page {
